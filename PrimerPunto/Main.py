@@ -1,7 +1,7 @@
 alph = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ"
 
 password = "LZAHL ZBTHW YBLIH XBLKL ILYOH ZLYCH ROKH"
-print("Clave para desifrar: " , password)
+print("Clave para desifrar: ", password)
 
 answer = []
 password = password.replace(" ", "")
@@ -31,9 +31,10 @@ def buscarPos(letra):
         if aux[i] == letra:
             return int(i)
 
+
 for i in range(len(password)):
     x = buscarPos(password[i])
-    answer.append(alph[x-7])
+    answer.append(alph[x - 7])
 
 res = "".join(answer)
 
